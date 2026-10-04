@@ -767,6 +767,10 @@ img {
   color: #008f4f;
 }
 
+.timeline-item.game-theory .timeline-date {
+  color: #008f4f;
+}
+
 .timeline-item.yellow .timeline-date {
   color: #bd8500;
 }
