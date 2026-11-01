@@ -24,7 +24,7 @@ if (navToggle && navLinks) {
     if (!navLinks.classList.contains("active")) return;
     if (event.key === "Escape") setMenu(false, true);
     if (event.key === "Tab") {
-      const last = navLinks.querySelector("li:last-child a");
+      const last = navLinks.querySelector(":scope > li:last-child > a");
       if (event.shiftKey && document.activeElement === navToggle) {
         event.preventDefault(); last.focus();
       } else if (!event.shiftKey && document.activeElement === last) {

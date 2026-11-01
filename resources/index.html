@@ -17,6 +17,8 @@
 <link rel="stylesheet" href="../adobe-typography.css?v=1" />
 <link rel="stylesheet" href="../styles.css" />
   <link rel="stylesheet" href="../enhancements.css?v=6" />
+  <link rel="stylesheet" href="/nav-categories.css" />
+  <script src="/nav-categories.js" defer></script>
   <script src="../site-details.js?v=1" defer></script>
   <script src="../motion.js?v=6" defer></script>
 </head>
@@ -36,11 +38,12 @@
 
     <ul class="nav-links" id="navLinks">
       <li><a href="/">Home</a></li>
-      <li><a href="/resources/">Resources</a></li>
-      <li><a href="#games">Games</a></li>
-      <li><a href="#newsletter-archive">Archive</a></li>
-      <li><a href="#journal">Journal</a></li>
-      <li><a href="#coming-soon">Coming Soon</a></li>
+      <li><details class="nav-group"><summary>About <span aria-hidden="true">⌄</span></summary><ul class="nav-submenu"><li><a href="/#about">About Us</a></li><li><a href="/#what-we-do">What We Do</a></li><li><a href="/#team">Our Team</a></li></ul></details></li>
+      <li><a href="/hackathon/">Hackathon</a></li>
+      <li><details class="nav-group"><summary>Resources <span aria-hidden="true">⌄</span></summary><ul class="nav-submenu"><li><a href="/resources/" aria-current="page">All Resources</a></li><li><a href="/resources/#games">Games</a></li><li><a href="/opportunities.html">Opportunities</a></li><li><a href="/resources/#newsletter-archive">Newsletter Archive</a></li><li><a href="/resources/#journal">Journal</a></li><li><a href="/resources/#coming-soon">Coming Soon</a></li></ul></details></li>
+      <li><a href="/#events">Events</a></li>
+      <li><a href="/#join">Join</a></li>
+      <li><a href="/#contact">Contact</a></li>
     </ul>
     </nav>
   </header>
