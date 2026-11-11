@@ -1,0 +1,147 @@
+/* A short, self-clearing projection reveal. No video, WebGL, or font downloads. */
+.projector-intro {
+  --projection-time: 2100ms;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  overflow: hidden;
+  pointer-events: none;
+  color: #fff8e9;
+  font-family: "freight-sans-pro", system-ui, sans-serif;
+  animation: projector-clear var(--projection-time) linear forwards;
+}
+.projector-intro[hidden] { display: none; }
+.projector-gate {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50.1%;
+  background: #21191a;
+  will-change: transform;
+  animation: projector-gate var(--projection-time) cubic-bezier(.65,0,.2,1) both;
+}
+.projector-gate--top { top: 0; transform-origin: center top; }
+.projector-gate--bottom { bottom: 0; transform-origin: center bottom; }
+.projector-atmosphere {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, #b8824138, transparent 58%),
+    radial-gradient(ellipse at 50% 50%, transparent 25%, #090607ba 100%);
+  animation: projector-atmosphere var(--projection-time) ease-out both;
+}
+.projector-grain {
+  position: absolute;
+  inset: 0;
+  opacity: .12;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.76' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23fff' filter='url(%23n)' opacity='.6' d='M0 0h160v160H0z'/%3E%3C/svg%3E");
+}
+.projector-rail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 24px;
+  border-inline: 1px solid #fff8e914;
+  background: repeating-linear-gradient(to bottom, transparent 0 16px, #fff8e920 16px 34px, transparent 34px 50px) center / 9px 100% no-repeat;
+}
+.projector-rail--left { left: 22px; }
+.projector-rail--right { right: 22px; }
+.projector-frame {
+  position: absolute;
+  inset: clamp(32px, 7vh, 76px) clamp(62px, 7vw, 130px);
+  border: 1px solid #fff8e922;
+  border-radius: 2px;
+}
+.projector-frame::before, .projector-frame::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 1px;
+  background: #fff8e96b;
+}
+.projector-frame::before { left: -8px; }
+.projector-frame::after { right: -8px; }
+.projector-caption {
+  position: absolute;
+  inset: auto 0 30px;
+  margin: 0;
+  text-align: center;
+  font: 10px/1.4 "input-mono", ui-monospace, monospace;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: #fff8e993;
+}
+.projector-caption--top { inset: 30px 0 auto; }
+.projector-mark {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 23px;
+  animation: projector-mark var(--projection-time) ease both;
+}
+.projector-lens {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  border: 1px solid #ffdea768;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #fff8e906, 0 0 0 9px #fff8e920, 0 0 55px #ffb74d25;
+}
+.projector-lens::before {
+  content: '';
+  position: absolute;
+  inset: 9px;
+  border: 1px dashed #eac79275;
+  border-radius: 50%;
+  animation: projector-lens-turn var(--projection-time) ease-out both;
+}
+.projector-lens::after {
+  content: '';
+  position: absolute;
+  inset: 24px;
+  border-radius: 50%;
+  background: #fff7d9;
+  box-shadow: 0 0 20px 7px #ffd48e70, 0 0 55px 20px #eab67024;
+}
+.projector-brand { font-size: clamp(20px, 3vw, 32px); font-weight: 650; letter-spacing: -.04em; }
+.projector-beam {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 1px);
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffe8b9 20%, #fffcf0 50%, #ffe8b9 80%, transparent);
+  box-shadow: 0 0 14px 3px #ffd78675, 0 0 45px 8px #efb9693d;
+  animation: projector-beam var(--projection-time) cubic-bezier(.22,1,.36,1) both;
+}
+.projector-skip {
+  position: absolute;
+  bottom: 22px;
+  right: 64px;
+  border: 1px solid #fff8e940;
+  border-radius: 99px;
+  padding: 9px 14px;
+  background: #21191a;
+  color: #fff8e9;
+  font: 11px/1.2 "freight-sans-pro", system-ui, sans-serif;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.projector-skip:focus-visible { outline: 2px solid #fdde5b; outline-offset: 4px; }
+@keyframes projector-gate { 0%, 34% { transform: scaleY(1); } 90%, 100% { transform: scaleY(0); } }
+@keyframes projector-atmosphere { 0%, 34% { opacity: 1; } 84%, 100% { opacity: 0; } }
+@keyframes projector-mark { 0% { opacity: 0; transform: scale(.95); } 13%, 29% { opacity: 1; transform: scale(1); } 42%, 100% { opacity: 0; transform: scale(1.035); } }
+@keyframes projector-lens-turn { from { transform: rotate(-45deg); } to { transform: rotate(100deg); } }
+@keyframes projector-beam { 0%, 20% { opacity: 0; transform: scaleX(.005); } 30% { opacity: 1; transform: scaleX(.35); } 40% { opacity: .9; transform: scaleX(1); } 65%, 100% { opacity: 0; transform: scaleX(1); } }
+@keyframes projector-clear { 0%, 93% { opacity: 1; visibility: visible; } 100% { opacity: 0; visibility: hidden; } }
+@media (max-width: 600px) {
+  .projector-rail--left { left: 10px; }
+  .projector-rail--right { right: 10px; }
+  .projector-frame { inset: 60px 46px; }
+  .projector-caption { font-size: 8px; letter-spacing: .15em; }
+  .projector-caption:not(.projector-caption--top) { bottom: 62px; }
+  .projector-skip { bottom: 18px; right: 46px; }
+}
+@media (prefers-reduced-motion: reduce), print { .projector-intro { display: none !important; } }

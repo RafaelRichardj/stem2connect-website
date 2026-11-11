@@ -104,6 +104,51 @@
       }
     ]
   },
+  "assets/animal_welfare_webinar.png": {
+    "sourceHash": "88bc54532875320113494330988195ed4f60cc886fe9182fbcdb2c37f2b82c9f",
+    "sourceBytes": 664824,
+    "width": 1254,
+    "height": 1254,
+    "display": 70,
+    "candidates": [
+      {
+        "path": "assets/optimized/animal_welfare_webinar-224-0e12b9e870f2.webp",
+        "width": 224,
+        "height": 224,
+        "bytes": 31770
+      }
+    ]
+  },
+  "assets/college_application_q&a.png": {
+    "sourceHash": "7c490a735def34d3596b314531ab85bf096931739f508f814217d8d8488f7f3a",
+    "sourceBytes": 629769,
+    "width": 1254,
+    "height": 1254,
+    "display": 70,
+    "candidates": [
+      {
+        "path": "assets/optimized/college_application_q&a-224-09ea03947d35.webp",
+        "width": 224,
+        "height": 224,
+        "bytes": 30552
+      }
+    ]
+  },
+  "assets/satvik_webinar.png": {
+    "sourceHash": "10b3b525dea6c6c6ef3e59deecf908f22137f8d15c6989d7a50cab4bf1335cd7",
+    "sourceBytes": 670719,
+    "width": 1254,
+    "height": 1254,
+    "display": 70,
+    "candidates": [
+      {
+        "path": "assets/optimized/satvik_webinar-224-4fa0592a6447.webp",
+        "width": 224,
+        "height": 224,
+        "bytes": 31940
+      }
+    ]
+  },
   "assets/cryptology.png": {
     "sourceHash": "0a22dad21c10897ede9df723c35317d13d911c1f34521e32b39e7a01c3eef5d6",
     "sourceBytes": 420662,
@@ -164,45 +209,62 @@
       }
     ]
   },
+  "assets/stemist_education_logo.png": {
+    "sourceHash": "6253505fe92a9c06c52bf4455732817e49d41b3ce70dbf3126795efe49990915",
+    "sourceBytes": 78813,
+    "width": 1946,
+    "height": 635,
+    "display": 180,
+    "candidates": [
+      {
+        "path": "assets/optimized/stemist_education_logo-588-dd1d77ac5171.webp",
+        "width": 588,
+        "height": 192,
+        "bytes": 19986
+      }
+    ]
+  },
   "assets/andrea.png": {
     "sourceHash": "9acfd8cea4e3aa1e3b2b76e8d298d03d9e3cb71a2521dd0607f5ac83262233b0",
     "sourceBytes": 298898,
     "width": 412,
     "height": 442,
-    "display": 96,
+    "display": 288,
+    "sizes": "(max-width: 600px) 124px, (max-width: 1000px) 42vw, 260px",
     "candidates": [
       {
-        "path": "assets/optimized/andrea-192-d12b106e8056.webp",
-        "width": 192,
-        "height": 206,
-        "bytes": 53172
+        "path": "assets/optimized/andrea-320-a4a0d5bfc951.webp",
+        "width": 320,
+        "height": 343,
+        "bytes": 19912
       },
       {
-        "path": "assets/optimized/andrea-288-8c93bd493aa7.webp",
-        "width": 288,
-        "height": 309,
-        "bytes": 103798
+        "path": "assets/optimized/andrea-412-4d063922cabe.webp",
+        "width": 412,
+        "height": 442,
+        "bytes": 27022
       }
     ]
   },
   "assets/anna.png": {
-    "sourceHash": "3d0f2680ea51f5f982cc355fc1fe483f4ee494edd7b2c1cfd5b4d40b8b35f928",
-    "sourceBytes": 264888,
-    "width": 415,
-    "height": 477,
-    "display": 96,
+    "sourceHash": "c46f40e9f928b7d2d9e380c2333c892b1a80b2cb076319f9e7dc7ca8776c8b0d",
+    "sourceBytes": 1243030,
+    "width": 832,
+    "height": 1248,
+    "display": 288,
+    "sizes": "(max-width: 600px) 124px, (max-width: 1000px) 42vw, 260px",
     "candidates": [
       {
-        "path": "assets/optimized/anna-192-df2403faacd0.webp",
-        "width": 192,
-        "height": 221,
-        "bytes": 44538
+        "path": "assets/optimized/anna-320-200a4db6ebe7.webp",
+        "width": 320,
+        "height": 480,
+        "bytes": 12808
       },
       {
-        "path": "assets/optimized/anna-288-18150c31b78e.webp",
-        "width": 288,
-        "height": 331,
-        "bytes": 89396
+        "path": "assets/optimized/anna-480-7e20a624f50e.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 23228
       }
     ]
   },
@@ -211,19 +273,20 @@
     "sourceBytes": 339261,
     "width": 490,
     "height": 505,
-    "display": 96,
+    "display": 288,
+    "sizes": "(max-width: 600px) 124px, (max-width: 1000px) 42vw, 260px",
     "candidates": [
       {
-        "path": "assets/optimized/adelaide-192-ee9296bdce6b.webp",
-        "width": 192,
-        "height": 198,
-        "bytes": 42414
+        "path": "assets/optimized/adelaide-320-b1ed6720cc2b.webp",
+        "width": 320,
+        "height": 330,
+        "bytes": 11874
       },
       {
-        "path": "assets/optimized/adelaide-288-8c481079048a.webp",
-        "width": 288,
-        "height": 297,
-        "bytes": 86768
+        "path": "assets/optimized/adelaide-480-3c124387038f.webp",
+        "width": 480,
+        "height": 495,
+        "bytes": 19298
       }
     ]
   },
@@ -232,19 +295,20 @@
     "sourceBytes": 460364,
     "width": 496,
     "height": 616,
-    "display": 96,
+    "display": 288,
+    "sizes": "(max-width: 600px) 124px, (max-width: 1000px) 42vw, 260px",
     "candidates": [
       {
-        "path": "assets/optimized/bernice-192-c140294ff1fa.webp",
-        "width": 192,
-        "height": 238,
-        "bytes": 55894
+        "path": "assets/optimized/bernice-320-d3b9ee4c3e3f.webp",
+        "width": 320,
+        "height": 397,
+        "bytes": 19944
       },
       {
-        "path": "assets/optimized/bernice-288-0c68df57e28d.webp",
-        "width": 288,
-        "height": 358,
-        "bytes": 112794
+        "path": "assets/optimized/bernice-480-36428bf1bc41.webp",
+        "width": 480,
+        "height": 596,
+        "bytes": 35372
       }
     ]
   },
@@ -253,19 +317,20 @@
     "sourceBytes": 234568,
     "width": 450,
     "height": 384,
-    "display": 96,
+    "display": 288,
+    "sizes": "(max-width: 600px) 124px, (max-width: 1000px) 42vw, 260px",
     "candidates": [
       {
-        "path": "assets/optimized/rafael-225-7f2a0a63144d.webp",
-        "width": 225,
-        "height": 192,
-        "bytes": 47072
+        "path": "assets/optimized/rafael-375-942286bd5f51.webp",
+        "width": 375,
+        "height": 320,
+        "bytes": 14758
       },
       {
-        "path": "assets/optimized/rafael-338-4cec358da1d8.webp",
-        "width": 338,
-        "height": 288,
-        "bytes": 89504
+        "path": "assets/optimized/rafael-450-02c4e9c75653.webp",
+        "width": 450,
+        "height": 384,
+        "bytes": 17410
       }
     ]
   },
@@ -274,19 +339,20 @@
     "sourceBytes": 318743,
     "width": 454,
     "height": 456,
-    "display": 96,
+    "display": 288,
+    "sizes": "(max-width: 600px) 124px, (max-width: 1000px) 42vw, 260px",
     "candidates": [
       {
-        "path": "assets/optimized/rylan-192-bdef03da4d66.webp",
-        "width": 192,
-        "height": 193,
-        "bytes": 49418
+        "path": "assets/optimized/rylan-320-10581ab66c29.webp",
+        "width": 320,
+        "height": 321,
+        "bytes": 14742
       },
       {
-        "path": "assets/optimized/rylan-288-1fbf3aec6dc7.webp",
-        "width": 288,
-        "height": 289,
-        "bytes": 103242
+        "path": "assets/optimized/rylan-454-fcf21c3fe147.webp",
+        "width": 454,
+        "height": 456,
+        "bytes": 22296
       }
     ]
   },
@@ -295,19 +361,130 @@
     "sourceBytes": 445438,
     "width": 549,
     "height": 478,
-    "display": 96,
+    "display": 288,
+    "sizes": "(max-width: 600px) 124px, (max-width: 1000px) 42vw, 260px",
     "candidates": [
       {
-        "path": "assets/optimized/hadia-221-7dd1298238ea.webp",
-        "width": 221,
-        "height": 192,
-        "bytes": 53548
+        "path": "assets/optimized/hadia-368-b504e2b1f5a9.webp",
+        "width": 368,
+        "height": 320,
+        "bytes": 18214
       },
       {
-        "path": "assets/optimized/hadia-331-1da27bfff46b.webp",
-        "width": 331,
-        "height": 288,
-        "bytes": 111398
+        "path": "assets/optimized/hadia-549-35c1638c5ddc.webp",
+        "width": 549,
+        "height": 478,
+        "bytes": 32886
+      }
+    ]
+  },
+  "assets/arjun.png": {
+    "sourceHash": "47f63d0d28435253053dea729885027823b09638134b45d538903e76dee07064",
+    "sourceBytes": 433323,
+    "width": 633,
+    "height": 606,
+    "display": 288,
+    "sizes": "(max-width: 600px) 124px, (max-width: 1000px) 42vw, 260px",
+    "candidates": [
+      {
+        "path": "assets/optimized/arjun-334-9fca9610aa27.webp",
+        "width": 334,
+        "height": 320,
+        "bytes": 8248
+      },
+      {
+        "path": "assets/optimized/arjun-501-bc77ab81d117.webp",
+        "width": 501,
+        "height": 480,
+        "bytes": 12910
+      }
+    ]
+  },
+  "assets/aira.png": {
+    "sourceHash": "6dab9502b8fa4e6b08ae0952c939597bebe9012c14bf67242bdcef91a9122030",
+    "sourceBytes": 704040,
+    "width": 739,
+    "height": 744,
+    "display": 288,
+    "sizes": "(max-width: 600px) 124px, (max-width: 1000px) 42vw, 260px",
+    "candidates": [
+      {
+        "path": "assets/optimized/aira-320-46019818d045.webp",
+        "width": 320,
+        "height": 322,
+        "bytes": 15836
+      },
+      {
+        "path": "assets/optimized/aira-480-a17380200e13.webp",
+        "width": 480,
+        "height": 483,
+        "bytes": 27118
+      }
+    ]
+  },
+  "assets/satvik.png": {
+    "sourceHash": "1fcf1a4cdf4a3265f7d1bfad652b22bb6cd406589329208c5842782008ff3c5c",
+    "sourceBytes": 726347,
+    "width": 790,
+    "height": 790,
+    "display": 288,
+    "sizes": "(max-width: 600px) 124px, (max-width: 1000px) 42vw, 260px",
+    "candidates": [
+      {
+        "path": "assets/optimized/satvik-320-cf1d39e7c50e.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 6542
+      },
+      {
+        "path": "assets/optimized/satvik-480-6bb46cd48b64.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 11190
+      }
+    ]
+  },
+  "assets/rudransh.png": {
+    "sourceHash": "b337d6ee8a94ea3c55088362f1a48c5638ced2c34ae8fb7c70712c753a652712",
+    "sourceBytes": 953563,
+    "width": 700,
+    "height": 828,
+    "display": 288,
+    "sizes": "(max-width: 600px) 124px, (max-width: 1000px) 42vw, 260px",
+    "candidates": [
+      {
+        "path": "assets/optimized/rudransh-320-6a3434931e21.webp",
+        "width": 320,
+        "height": 379,
+        "bytes": 22528
+      },
+      {
+        "path": "assets/optimized/rudransh-480-90ce32f9df87.webp",
+        "width": 480,
+        "height": 568,
+        "bytes": 43954
+      }
+    ]
+  },
+  "assets/cynthia.png": {
+    "sourceHash": "a984747b32350db405b60e29caed1ca0571d9cf628404473d851e3a02d8dfbab",
+    "sourceBytes": 649454,
+    "width": 817,
+    "height": 591,
+    "display": 288,
+    "sizes": "(max-width: 600px) 124px, (max-width: 1000px) 42vw, 260px",
+    "candidates": [
+      {
+        "path": "assets/optimized/cynthia-442-a6c216d186e2.webp",
+        "width": 442,
+        "height": 320,
+        "bytes": 19248
+      },
+      {
+        "path": "assets/optimized/cynthia-664-7e8bf6826b88.webp",
+        "width": 664,
+        "height": 480,
+        "bytes": 33280
       }
     ]
   },

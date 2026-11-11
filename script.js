@@ -7,21 +7,36 @@ if (year) {
 }
 
 if (navToggle && navLinks) {
-  navToggle.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("active");
+  const compactNav = matchMedia("(max-width: 1320px)");
+  const setMenu = (open, restoreFocus = false) => {
+    const isOpen = compactNav.matches && open;
+    navLinks.classList.toggle("active", isOpen);
     navToggle.classList.toggle("active", isOpen);
     navToggle.setAttribute("aria-expanded", String(isOpen));
+    navToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+    navLinks.inert = compactNav.matches && !isOpen;
     document.body.classList.toggle("nav-open", isOpen);
+    if (restoreFocus) navToggle.focus({ preventScroll: true });
+  };
+  navToggle.addEventListener("click", () => setMenu(!navLinks.classList.contains("active")));
+  navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("keydown", event => {
+    if (!navLinks.classList.contains("active")) return;
+    if (event.key === "Escape") setMenu(false, true);
+    if (event.key === "Tab") {
+      const last = navLinks.querySelector(":scope > li:last-child > a");
+      if (event.shiftKey && document.activeElement === navToggle) {
+        event.preventDefault(); last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault(); navToggle.focus();
+      }
+    }
   });
-
-  navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("active");
-      navToggle.classList.remove("active");
-      navToggle.setAttribute("aria-expanded", "false");
-      document.body.classList.remove("nav-open");
-    });
+  document.addEventListener("click", event => {
+    if (!event.target.closest(".navbar") && navLinks.classList.contains("active")) setMenu(false);
   });
+  compactNav.addEventListener("change", () => setMenu(false));
+  setMenu(false);
 }
 
 const isResourcesPage = Boolean(document.querySelector(".resources-hero"));

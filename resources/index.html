@@ -10,13 +10,19 @@
   />
   <link rel="icon" type="image/png" href="../assets/optimized/favicon-96-25c9d480dc3a.png" data-source-href="../assets/favicon.png" />
   <link rel="shortcut icon" href="../assets/optimized/favicon-96-25c9d480dc3a.png" data-source-href="../assets/favicon.png" />
-  <link rel="stylesheet" href="../styles.css" />
-  <link rel="preload" href="../assets/fonts/general-variable.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="../assets/fonts/cabinet-variable.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="../enhancements.css?v=4" />
+  <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+<link rel="preconnect" href="https://p.typekit.net" crossorigin />
+<link rel="preload" as="style" href="https://use.typekit.net/zmn3juo.css" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://use.typekit.net/zmn3juo.css" /></noscript>
+<link rel="stylesheet" href="../adobe-typography.css?v=1" />
+<link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../enhancements.css?v=6" />
+  <link rel="stylesheet" href="/nav-categories.css" />
+  <script src="/nav-categories.js" defer></script>
+  <script src="../site-details.js?v=1" defer></script>
   <script src="../motion.js?v=6" defer></script>
 </head>
-<body>
+<body class="reading-room">
   <header class="site-header" id="top">
     <nav class="navbar" aria-label="Main navigation">
       <a class="brand" href="/" aria-label="STEM2Connect home">
@@ -32,11 +38,12 @@
 
     <ul class="nav-links" id="navLinks">
       <li><a href="/">Home</a></li>
-      <li><a href="/resources/">Resources</a></li>
-      <li><a href="#games">Games</a></li>
-      <li><a href="#newsletter-archive">Archive</a></li>
-      <li><a href="#journal">Journal</a></li>
-      <li><a href="#coming-soon">Coming Soon</a></li>
+      <li><details class="nav-group"><summary>About <span aria-hidden="true">⌄</span></summary><ul class="nav-submenu"><li><a href="/#about">About Us</a></li><li><a href="/#what-we-do">What We Do</a></li><li><a href="/#team">Our Team</a></li></ul></details></li>
+      <li><a href="/hackathon/">Hackathon</a></li>
+      <li><details class="nav-group"><summary>Resources <span aria-hidden="true">⌄</span></summary><ul class="nav-submenu"><li><a href="/resources/" aria-current="page">All Resources</a></li><li><a href="/resources/#games">Games</a></li><li><a href="/opportunities.html">Opportunities</a></li><li><a href="/resources/#newsletter-archive">Newsletter Archive</a></li><li><a href="/resources/#journal">Journal</a></li><li><a href="/resources/#coming-soon">Coming Soon</a></li></ul></details></li>
+      <li><a href="/#events">Events</a></li>
+      <li><a href="/#join">Join</a></li>
+      <li><a href="/#contact">Contact</a></li>
     </ul>
     </nav>
   </header>
@@ -62,217 +69,410 @@
         </p>
       </div>
 
-      <div class="container resources-grid">
-        <article class="resource-card">
-          <span class="tag">AI Research</span>
-          <h3>From Inquiry to Infrastructure: How AI Is Rebuilding the Foundations of Research</h3>
-          <p>An overview of how AI systems are changing the way scientific research is designed, managed, and scaled.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/from-inquiry-infrastructure-how-ai-rebuilding-foundations-pzxue" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+      <div class="container reading-tools" hidden>
+        <div class="reading-filters" role="group" aria-label="Filter newsletter topics">
+          <button type="button" data-topic-filter="all" aria-pressed="true">All reads</button>
+          <button type="button" data-topic-filter="technology" aria-pressed="false">AI &amp; technology</button>
+          <button type="button" data-topic-filter="health" aria-pressed="false">Health &amp; medicine</button>
+          <button type="button" data-topic-filter="environment" aria-pressed="false">Environment</button>
+          <button type="button" data-topic-filter="pathways" aria-pressed="false">STEM journeys</button>
+        </div>
+        <label class="reading-search"><span>Find a read</span><input type="search" placeholder="Search titles or topics" autocomplete="off" aria-controls="reading-library" /></label>
+        <p class="reading-count" role="status" aria-live="polite" aria-atomic="true">30 reads</p>
+      </div>
+      <div class="container resources-grid reading-library" id="reading-library">
+        <article class="resource-card publication-card featured-publication" data-topic="technology">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>01 / ARCHIVE</span></div>
+            <span class="tag">AI Research</span>
+            <h3>From Inquiry to Infrastructure: How AI Is Rebuilding the Foundations of Research</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M10 50H45L70 25H115L140 50H190M10 100H55L80 75H130L155 100H190M10 145H50L75 120H125L150 145H190"></path><circle cx="70" cy="25" r="5"></circle><circle cx="130" cy="75" r="5"></circle><circle cx="75" cy="120" r="5"></circle></svg>
+          </div>
+          <div class="publication-detail">
+            <span class="featured-label">Featured read</span>
+            <p>An overview of how AI systems are changing the way scientific research is designed, managed, and scaled.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/from-inquiry-infrastructure-how-ai-rebuilding-foundations-pzxue" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">AI & Society</span>
-          <h3>The Reliance on AI for Daily Life Decisions</h3>
-          <p>A reflection on how everyday choices are increasingly influenced by recommendation systems and AI-driven tools.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/reliance-ai-daily-life-decisions-stem2connect-6ynne" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="technology">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>02 / ARCHIVE</span></div>
+            <span class="tag">AI &amp; Society</span>
+            <h3>The Reliance on AI for Daily Life Decisions</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M10 50H45L70 25H115L140 50H190M10 100H55L80 75H130L155 100H190M10 145H50L75 120H125L150 145H190"></path><circle cx="70" cy="25" r="5"></circle><circle cx="130" cy="75" r="5"></circle><circle cx="75" cy="120" r="5"></circle></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A reflection on how everyday choices are increasingly influenced by recommendation systems and AI-driven tools.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/reliance-ai-daily-life-decisions-stem2connect-6ynne" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Algorithms</span>
-          <h3>How Invisible Algorithms Are Designing Your Daily Experience — Are You Aware?</h3>
-          <p>An accessible look at the unseen algorithms shaping what people read, buy, and believe each day.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/how-invisible-algorithms-designing-your-daily-experience-jnb6e" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="technology">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>03 / ARCHIVE</span></div>
+            <span class="tag">Algorithms</span>
+            <h3>How Invisible Algorithms Are Designing Your Daily Experience — Are You Aware?</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M10 50H45L70 25H115L140 50H190M10 100H55L80 75H130L155 100H190M10 145H50L75 120H125L150 145H190"></path><circle cx="70" cy="25" r="5"></circle><circle cx="130" cy="75" r="5"></circle><circle cx="75" cy="120" r="5"></circle></svg>
+          </div>
+          <div class="publication-detail">
+            <p>An accessible look at the unseen algorithms shaping what people read, buy, and believe each day.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/how-invisible-algorithms-designing-your-daily-experience-jnb6e" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">STEM Lessons</span>
-          <h3>Failure, Responsibility, and Discovery: What STEM's Biggest Mistakes Taught Us</h3>
-          <p>A discussion of major scientific failures and the ethical lessons they revealed for future innovators.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/failure-responsibility-discovery-what-stems-biggest-mistakes-kgbwe" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="pathways">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>04 / ARCHIVE</span></div>
+            <span class="tag">STEM Lessons</span>
+            <h3>Failure, Responsibility, and Discovery: What STEM's Biggest Mistakes Taught Us</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><circle cx="100" cy="90" r="68"></circle><circle cx="100" cy="90" r="47"></circle><path d="M100 12v23M100 145v23M22 90h23M155 90h23M82 108l8-28 28-8-8 28Z"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A discussion of major scientific failures and the ethical lessons they revealed for future innovators.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/failure-responsibility-discovery-what-stems-biggest-mistakes-kgbwe" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Nobel History</span>
-          <h3>STEM Failures: The Silent Architects of Nobel Breakthroughs</h3>
-          <p>A perspective on how failed experiments and dead ends often set the stage for world-changing discoveries.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/stem-failures-silent-architects-nobel-breakthroughs-stem2connect-uvvde" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="pathways">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>05 / ARCHIVE</span></div>
+            <span class="tag">Nobel History</span>
+            <h3>STEM Failures: The Silent Architects of Nobel Breakthroughs</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><circle cx="100" cy="90" r="68"></circle><circle cx="100" cy="90" r="47"></circle><path d="M100 12v23M100 145v23M22 90h23M155 90h23M82 108l8-28 28-8-8 28Z"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A perspective on how failed experiments and dead ends often set the stage for world-changing discoveries.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/stem-failures-silent-architects-nobel-breakthroughs-stem2connect-uvvde" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">STEM Pathways</span>
-          <h3>What Is STEM Really Like?</h3>
-          <p>A student-centered introduction to the realities, challenges, and opportunities of STEM learning paths.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/what-stem-really-like-stem2connect-fo2ee" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="pathways">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>06 / ARCHIVE</span></div>
+            <span class="tag">STEM Pathways</span>
+            <h3>What Is STEM Really Like?</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><circle cx="100" cy="90" r="68"></circle><circle cx="100" cy="90" r="47"></circle><path d="M100 12v23M100 145v23M22 90h23M155 90h23M82 108l8-28 28-8-8 28Z"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A student-centered introduction to the realities, challenges, and opportunities of STEM learning paths.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/what-stem-really-like-stem2connect-fo2ee" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Innovation Thinking</span>
-          <h3>What Is STEM Really Like? A Cognitive Architecture of Innovation in Science and Technology</h3>
-          <p>An exploration of the mental models and interdisciplinary thinking used to solve difficult STEM problems.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/what-stem-really-like-cognitive-architecture-innovation-science-wkkhe" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="pathways">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>07 / ARCHIVE</span></div>
+            <span class="tag">Innovation Thinking</span>
+            <h3>What Is STEM Really Like? A Cognitive Architecture of Innovation in Science and Technology</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><circle cx="100" cy="90" r="68"></circle><circle cx="100" cy="90" r="47"></circle><path d="M100 12v23M100 145v23M22 90h23M155 90h23M82 108l8-28 28-8-8 28Z"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>An exploration of the mental models and interdisciplinary thinking used to solve difficult STEM problems.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/what-stem-really-like-cognitive-architecture-innovation-science-wkkhe" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Telemedicine</span>
-          <h3>Telemedicine and How It Improves Access to Healthcare</h3>
-          <p>A practical guide to how telemedicine helps reduce healthcare barriers for underserved communities.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/telemedicine-how-improves-access-healthcare-stem2connect-iopae" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="health">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>08 / ARCHIVE</span></div>
+            <span class="tag">Telemedicine</span>
+            <h3>Telemedicine and How It Improves Access to Healthcare</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M50 15c95 35 5 115 100 150M150 15C55 50 145 130 50 165M68 28h64M81 48h38M85 70h30M85 92h30M78 117h44M64 143h72"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A practical guide to how telemedicine helps reduce healthcare barriers for underserved communities.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/telemedicine-how-improves-access-healthcare-stem2connect-iopae" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Healthcare Access</span>
-          <h3>The Infrastructure of Access: Telemedicine's Role in Modern Healthcare</h3>
-          <p>A systems-level view of telemedicine as essential infrastructure in contemporary healthcare delivery.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/infrastructure-access-telemedicines-role-modern-healthcare-d5loe" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="health">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>09 / ARCHIVE</span></div>
+            <span class="tag">Healthcare Access</span>
+            <h3>The Infrastructure of Access: Telemedicine's Role in Modern Healthcare</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M50 15c95 35 5 115 100 150M150 15C55 50 145 130 50 165M68 28h64M81 48h38M85 70h30M85 92h30M78 117h44M64 143h72"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A systems-level view of telemedicine as essential infrastructure in contemporary healthcare delivery.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/infrastructure-access-telemedicines-role-modern-healthcare-d5loe" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Digital Health</span>
-          <h3>Signal over Noise: How Telemedicine Reshaped Access</h3>
-          <p>An analysis of the most meaningful changes telemedicine introduced during rapid healthcare digitization.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/signal-over-noise-how-telemedicine-reshaped-access-stem2connect-lbqae" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="health">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>10 / ARCHIVE</span></div>
+            <span class="tag">Digital Health</span>
+            <h3>Signal over Noise: How Telemedicine Reshaped Access</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M50 15c95 35 5 115 100 150M150 15C55 50 145 130 50 165M68 28h64M81 48h38M85 70h30M85 92h30M78 117h44M64 143h72"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>An analysis of the most meaningful changes telemedicine introduced during rapid healthcare digitization.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/signal-over-noise-how-telemedicine-reshaped-access-stem2connect-lbqae" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Medical Ethics</span>
-          <h3>AI in Healthcare: Innovation or Ethical Risk?</h3>
-          <p>A balanced look at AI's clinical promise alongside concerns about bias, transparency, and accountability.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/automation-healthcare-innovation-ethical-risk-stem2connect-5bm2e" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="health">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>11 / ARCHIVE</span></div>
+            <span class="tag">Medical Ethics</span>
+            <h3>AI in Healthcare: Innovation or Ethical Risk?</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M50 15c95 35 5 115 100 150M150 15C55 50 145 130 50 165M68 28h64M81 48h38M85 70h30M85 92h30M78 117h44M64 143h72"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A balanced look at AI's clinical promise alongside concerns about bias, transparency, and accountability.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/automation-healthcare-innovation-ethical-risk-stem2connect-5bm2e" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Automation Ethics</span>
-          <h3>The Ethics of Medical Automation</h3>
-          <p>An introduction to the ethical tradeoffs that emerge when healthcare decisions rely on automated tools.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/ethics-medical-automation-stem2connect-gqzze" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="health">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>12 / ARCHIVE</span></div>
+            <span class="tag">Automation Ethics</span>
+            <h3>The Ethics of Medical Automation</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M50 15c95 35 5 115 100 150M150 15C55 50 145 130 50 165M68 28h64M81 48h38M85 70h30M85 92h30M78 117h44M64 143h72"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>An introduction to the ethical tradeoffs that emerge when healthcare decisions rely on automated tools.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/ethics-medical-automation-stem2connect-gqzze" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Clinical AI</span>
-          <h3>Ethics in Medical Automation: When Machines Make Critical Clinical Decisions — and Nobody Can Explain Why?</h3>
-          <p>A deep dive into explainability and trust challenges when high-stakes medical AI outputs are opaque.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/ethics-medical-automation-when-machines-make-critical-clinical-qpzme" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="health">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>13 / ARCHIVE</span></div>
+            <span class="tag">Clinical AI</span>
+            <h3>Ethics in Medical Automation: When Machines Make Critical Clinical Decisions — and Nobody Can Explain Why?</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M50 15c95 35 5 115 100 150M150 15C55 50 145 130 50 165M68 28h64M81 48h38M85 70h30M85 92h30M78 117h44M64 143h72"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A deep dive into explainability and trust challenges when high-stakes medical AI outputs are opaque.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/ethics-medical-automation-when-machines-make-critical-clinical-qpzme" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">AI in Medicine</span>
-          <h3>AI in Healthcare</h3>
-          <p>A foundational article introducing major applications of AI across diagnostics, workflows, and care.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/ai-healthcare-stem2connect-rj0ge" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="health">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>14 / ARCHIVE</span></div>
+            <span class="tag">AI in Medicine</span>
+            <h3>AI in Healthcare</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M50 15c95 35 5 115 100 150M150 15C55 50 145 130 50 165M68 28h64M81 48h38M85 70h30M85 92h30M78 117h44M64 143h72"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A foundational article introducing major applications of AI across diagnostics, workflows, and care.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/ai-healthcare-stem2connect-rj0ge" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Diagnostics</span>
-          <h3>AI in Healthcare: Rewriting Diagnosis and Redefining the Future of Treatment</h3>
-          <p>An exploration of how AI-assisted diagnostics may improve speed, precision, and treatment planning.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/ai-healthcare-rewriting-diagnosis-redefining-future-treatment-5wdke" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="health">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>15 / ARCHIVE</span></div>
+            <span class="tag">Diagnostics</span>
+            <h3>AI in Healthcare: Rewriting Diagnosis and Redefining the Future of Treatment</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M50 15c95 35 5 115 100 150M150 15C55 50 145 130 50 165M68 28h64M81 48h38M85 70h30M85 92h30M78 117h44M64 143h72"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>An exploration of how AI-assisted diagnostics may improve speed, precision, and treatment planning.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/ai-healthcare-rewriting-diagnosis-redefining-future-treatment-5wdke" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Clinical Innovation</span>
-          <h3>AI in Healthcare: From Promise to Clinical Impact</h3>
-          <p>A practical perspective on translating ambitious AI ideas into measurable outcomes in clinics.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/ai-healthcare-from-promise-clinical-impact-stem2connect-yjx6e" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="health">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>16 / ARCHIVE</span></div>
+            <span class="tag">Clinical Innovation</span>
+            <h3>AI in Healthcare: From Promise to Clinical Impact</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M50 15c95 35 5 115 100 150M150 15C55 50 145 130 50 165M68 28h64M81 48h38M85 70h30M85 92h30M78 117h44M64 143h72"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A practical perspective on translating ambitious AI ideas into measurable outcomes in clinics.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/ai-healthcare-from-promise-clinical-impact-stem2connect-yjx6e" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Human-Computer Interaction</span>
-          <h3>The Silent Influence: Rethinking Human-Computer Interaction</h3>
-          <p>A look at subtle interface design choices that influence behavior across digital systems.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/silent-influence-rethinking-humancomputer-interaction-stem2connect-ndmwe" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="technology">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>17 / ARCHIVE</span></div>
+            <span class="tag">Human-Computer Interaction</span>
+            <h3>The Silent Influence: Rethinking Human-Computer Interaction</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M10 50H45L70 25H115L140 50H190M10 100H55L80 75H130L155 100H190M10 145H50L75 120H125L150 145H190"></path><circle cx="70" cy="25" r="5"></circle><circle cx="130" cy="75" r="5"></circle><circle cx="75" cy="120" r="5"></circle></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A look at subtle interface design choices that influence behavior across digital systems.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/silent-influence-rethinking-humancomputer-interaction-stem2connect-ndmwe" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Emerging Tech</span>
-          <h3>Human-Computer Interaction in Emerging Technologies</h3>
-          <p>An article connecting HCI principles to AI, wearables, and next-generation computing environments.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/humancomputer-interaction-emerging-technologies-stem2connect-kxqre" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="technology">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>18 / ARCHIVE</span></div>
+            <span class="tag">Emerging Tech</span>
+            <h3>Human-Computer Interaction in Emerging Technologies</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M10 50H45L70 25H115L140 50H190M10 100H55L80 75H130L155 100H190M10 145H50L75 120H125L150 145H190"></path><circle cx="70" cy="25" r="5"></circle><circle cx="130" cy="75" r="5"></circle><circle cx="75" cy="120" r="5"></circle></svg>
+          </div>
+          <div class="publication-detail">
+            <p>An article connecting HCI principles to AI, wearables, and next-generation computing environments.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/humancomputer-interaction-emerging-technologies-stem2connect-kxqre" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Neurotechnology</span>
-          <h3>The Neural Symphony: Brain-Computer Interfaces Redefining Human Cognition in 2026</h3>
-          <p>An overview of breakthroughs in brain-computer interfaces and their implications for learning and health.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/neural-symphony-brain-computer-interfaces-redefining-human-ajpae" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="health">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>19 / ARCHIVE</span></div>
+            <span class="tag">Neurotechnology</span>
+            <h3>The Neural Symphony: Brain-Computer Interfaces Redefining Human Cognition in 2026</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M50 15c95 35 5 115 100 150M150 15C55 50 145 130 50 165M68 28h64M81 48h38M85 70h30M85 92h30M78 117h44M64 143h72"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>An overview of breakthroughs in brain-computer interfaces and their implications for learning and health.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/neural-symphony-brain-computer-interfaces-redefining-human-ajpae" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Smart Cities</span>
-          <h3>Smart Cities Meet Sustainability</h3>
-          <p>An introduction to how cities can use technology and data to improve sustainability outcomes.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/smart-cities-meet-sustainability-stem2connect-hvo1e" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="environment">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>20 / ARCHIVE</span></div>
+            <span class="tag">Smart Cities</span>
+            <h3>Smart Cities Meet Sustainability</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M35 158C15 45 87 19 164 22c8 89-36 140-129 136ZM35 158L144 42M68 122V69M100 91h49M125 61V33"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>An introduction to how cities can use technology and data to improve sustainability outcomes.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/smart-cities-meet-sustainability-stem2connect-hvo1e" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Urban Futures</span>
-          <h3>The Future of Cities: Intelligence, Sustainability, and Urban Transformation</h3>
-          <p>A forward-looking piece on integrated planning for resilient, tech-enabled, and inclusive urban growth.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/future-cities-intelligence-sustainability-urban-transformation-9fpje" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="environment">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>21 / ARCHIVE</span></div>
+            <span class="tag">Urban Futures</span>
+            <h3>The Future of Cities: Intelligence, Sustainability, and Urban Transformation</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M35 158C15 45 87 19 164 22c8 89-36 140-129 136ZM35 158L144 42M68 122V69M100 91h49M125 61V33"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A forward-looking piece on integrated planning for resilient, tech-enabled, and inclusive urban growth.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/future-cities-intelligence-sustainability-urban-transformation-9fpje" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Resilience</span>
-          <h3>Smart Cities Meet Sustainability: Cybernetic Ecologies for Resilient Urban Futures</h3>
-          <p>A systems-thinking approach to designing adaptive and environmentally resilient city ecosystems.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/smart-cities-meet-sustainability-cybernetic-ecologies-resilient-fsnge" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="environment">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>22 / ARCHIVE</span></div>
+            <span class="tag">Resilience</span>
+            <h3>Smart Cities Meet Sustainability: Cybernetic Ecologies for Resilient Urban Futures</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M35 158C15 45 87 19 164 22c8 89-36 140-129 136ZM35 158L144 42M68 122V69M100 91h49M125 61V33"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A systems-thinking approach to designing adaptive and environmentally resilient city ecosystems.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/smart-cities-meet-sustainability-cybernetic-ecologies-resilient-fsnge" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Quantum Computing</span>
-          <h3>The Rise of Quantum Computing Explained</h3>
-          <p>A beginner-friendly explanation of why quantum computing matters and what problems it could solve.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/rise-quantum-computing-explained-stem2connect-nru5e" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="technology">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>23 / ARCHIVE</span></div>
+            <span class="tag">Quantum Computing</span>
+            <h3>The Rise of Quantum Computing Explained</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M10 50H45L70 25H115L140 50H190M10 100H55L80 75H130L155 100H190M10 145H50L75 120H125L150 145H190"></path><circle cx="70" cy="25" r="5"></circle><circle cx="130" cy="75" r="5"></circle><circle cx="75" cy="120" r="5"></circle></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A beginner-friendly explanation of why quantum computing matters and what problems it could solve.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/rise-quantum-computing-explained-stem2connect-nru5e" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Future Computing</span>
-          <h3>The Next Era of Computing: The Rise of Quantum Machines</h3>
-          <p>A concise look at the transition from classical to quantum paradigms in the next generation of computing.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/next-era-computing-rise-quantum-machines-stem2connect-sbwme" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="technology">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>24 / ARCHIVE</span></div>
+            <span class="tag">Future Computing</span>
+            <h3>The Next Era of Computing: The Rise of Quantum Machines</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M10 50H45L70 25H115L140 50H190M10 100H55L80 75H130L155 100H190M10 145H50L75 120H125L150 145H190"></path><circle cx="70" cy="25" r="5"></circle><circle cx="130" cy="75" r="5"></circle><circle cx="75" cy="120" r="5"></circle></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A concise look at the transition from classical to quantum paradigms in the next generation of computing.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/next-era-computing-rise-quantum-machines-stem2connect-sbwme" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Quantum Basics</span>
-          <h3>Emergence of Quantum Computing: Decoding a New Era</h3>
-          <p>An approachable breakdown of key quantum concepts and why they are gaining momentum globally.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/emergence-quantum-computing-decoding-new-era-stem2connect-btc7f" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="technology">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>25 / ARCHIVE</span></div>
+            <span class="tag">Quantum Basics</span>
+            <h3>Emergence of Quantum Computing: Decoding a New Era</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M10 50H45L70 25H115L140 50H190M10 100H55L80 75H130L155 100H190M10 145H50L75 120H125L150 145H190"></path><circle cx="70" cy="25" r="5"></circle><circle cx="130" cy="75" r="5"></circle><circle cx="75" cy="120" r="5"></circle></svg>
+          </div>
+          <div class="publication-detail">
+            <p>An approachable breakdown of key quantum concepts and why they are gaining momentum globally.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/emergence-quantum-computing-decoding-new-era-stem2connect-btc7f" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">STEM Mindset</span>
-          <h3>The Architecture of a STEM Mindset: Thinking Beyond Subjects in STEM Careers</h3>
-          <p>A guide to building cross-disciplinary habits that help students navigate long-term STEM career growth.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/architecture-stem-mindset-thinking-beyond-subjects-careers-liote" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="pathways">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>26 / ARCHIVE</span></div>
+            <span class="tag">STEM Mindset</span>
+            <h3>The Architecture of a STEM Mindset: Thinking Beyond Subjects in STEM Careers</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><circle cx="100" cy="90" r="68"></circle><circle cx="100" cy="90" r="47"></circle><path d="M100 12v23M100 145v23M22 90h23M155 90h23M82 108l8-28 28-8-8 28Z"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A guide to building cross-disciplinary habits that help students navigate long-term STEM career growth.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/architecture-stem-mindset-thinking-beyond-subjects-careers-liote" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Career Growth</span>
-          <h3>From Curiosity to Impact: How 2025-2026 Science Reveals the Real Progress of Becoming a STEM Professional</h3>
-          <p>A motivational piece linking curiosity, persistence, and practical milestones in STEM development.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/from-curiosity-impact-how-20252026-science-reveals-real-progress-elc9e" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="pathways">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>27 / ARCHIVE</span></div>
+            <span class="tag">Career Growth</span>
+            <h3>From Curiosity to Impact: How 2025-2026 Science Reveals the Real Progress of Becoming a STEM Professional</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><circle cx="100" cy="90" r="68"></circle><circle cx="100" cy="90" r="47"></circle><path d="M100 12v23M100 145v23M22 90h23M155 90h23M82 108l8-28 28-8-8 28Z"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A motivational piece linking curiosity, persistence, and practical milestones in STEM development.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/from-curiosity-impact-how-20252026-science-reveals-real-progress-elc9e" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Neuroscience & Health</span>
-          <h3>Emerging Neurotherapy for Many Disorders</h3>
-          <p>An update on promising neurotherapy approaches and their potential in treating complex disorders.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/neuromodulation-emerging-neurotherapy-many-disorders-stem2connect-5axnf" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="health">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>28 / ARCHIVE</span></div>
+            <span class="tag">Neuroscience &amp; Health</span>
+            <h3>Emerging Neurotherapy for Many Disorders</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M50 15c95 35 5 115 100 150M150 15C55 50 145 130 50 165M68 28h64M81 48h38M85 70h30M85 92h30M78 117h44M64 143h72"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>An update on promising neurotherapy approaches and their potential in treating complex disorders.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/neuromodulation-emerging-neurotherapy-many-disorders-stem2connect-5axnf" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Sustainable Materials</span>
-          <h3>Creating Bioplastics and 3D Biodegradable Materials: Building a Sustainable Future Beyond Traditional Plastics</h3>
-          <p>A practical look at how bioplastics and 3D biodegradable materials can reduce dependence on traditional plastics.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/creating-bioplastics-3d-biodegradable-materials-building-ukrwf" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="environment">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>29 / ARCHIVE</span></div>
+            <span class="tag">Sustainable Materials</span>
+            <h3>Creating Bioplastics and 3D Biodegradable Materials: Building a Sustainable Future Beyond Traditional Plastics</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M35 158C15 45 87 19 164 22c8 89-36 140-129 136ZM35 158L144 42M68 122V69M100 91h49M125 61V33"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>A practical look at how bioplastics and 3D biodegradable materials can reduce dependence on traditional plastics.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/creating-bioplastics-3d-biodegradable-materials-building-ukrwf" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
 
-        <article class="resource-card">
-          <span class="tag">Environmental Health</span>
-          <h3>Reviewing Environmental Health: Facts, Prevention, Types of Policies</h3>
-          <p>An overview of core environmental health facts, prevention strategies, and policy approaches that support healthier communities.</p>
-          <a class="button button-ghost" href="https://www.linkedin.com/pulse/reviewing-environmental-health-facts-prevention-types-policies-lyd6f" target="_blank" rel="noopener noreferrer">Read on LinkedIn</a>
+        <article class="resource-card publication-card" data-topic="environment">
+          <div class="publication-cover">
+            <div aria-hidden="true" class="publication-masthead"><span>INSIDE<br/>TOMORROW</span><span>30 / ARCHIVE</span></div>
+            <span class="tag">Environmental Health</span>
+            <h3>Reviewing Environmental Health: Facts, Prevention, Types of Policies</h3>
+            <svg aria-hidden="true" class="publication-art" focusable="false" viewbox="0 0 200 180"><path d="M35 158C15 45 87 19 164 22c8 89-36 140-129 136ZM35 158L144 42M68 122V69M100 91h49M125 61V33"></path></svg>
+          </div>
+          <div class="publication-detail">
+            <p>An overview of core environmental health facts, prevention strategies, and policy approaches that support healthier communities.</p>
+            <a class="button button-ghost" href="https://www.linkedin.com/pulse/reviewing-environmental-health-facts-prevention-types-policies-lyd6f" rel="noopener noreferrer" target="_blank">Read on LinkedIn</a>
+          </div>
         </article>
       </div>
+      <div class="container reading-empty" hidden><h3>No matching reads yet.</h3><p>Try another topic or a shorter search.</p><button class="button button-ghost" type="button" data-clear-reads>Show all reads</button></div>
     </section>
 
     <section class="section resources-posters-section" id="journal" aria-labelledby="journal-title">

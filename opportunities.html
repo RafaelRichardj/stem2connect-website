@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Discover STEM opportunities that match a student's interests, age, budget, schedule, and support needs."
-    />
-    <title>Opportunities | STEM2Connect</title>
-    <link rel="icon" type="image/png" href="assets/optimized/favicon-96-25c9d480dc3a.png" data-source-href="assets/favicon.png" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="opportunities.js" defer></script>
-  </head>
-  <body>
+<html lang="en"><head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Find your next STEM opportunity. Explore verified program sources, a real campus map, and a personal shortlist of summer camps and research experiences." />
+<title>Find your next STEM opportunity | STEM2Connect</title>
+<link rel="canonical" href="https://www.stem2connect.org/opportunities.html" />
+<link rel="icon" type="image/png" href="assets/optimized/favicon-96-25c9d480dc3a.png" data-source-href="assets/favicon.png" />
+<link rel="preconnect" href="https://use.typekit.net" crossorigin />
+<link rel="preconnect" href="https://p.typekit.net" crossorigin />
+<link rel="preload" as="style" href="https://use.typekit.net/zmn3juo.css" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://use.typekit.net/zmn3juo.css" /></noscript>
+<link rel="stylesheet" href="adobe-typography.css?v=1" />
+<link rel="stylesheet" href="styles.css" /><link rel="stylesheet" href="opportunities.css?v=3" />
+<link rel="stylesheet" href="/nav-categories.css" />
+<script src="/nav-categories.js" defer></script>
+<script type="module" src="opportunities.js?v=3"></script>
+</head><body class="opportunity-page"><a class="opp-skip-link" href="#main-content">Skip to content</a>
     <header class="site-header" id="top">
       <nav class="navbar" aria-label="Main navigation">
         <a class="brand" href="index.html" aria-label="STEM2Connect home">
-          <img src="assets/logo.jpg" alt="STEM2Connect logo" class="brand-logo" />
+          <img src="assets/logo.jpg" alt="STEM2Connect logo" class="brand-logo" width="54" height="54" />
           <span class="brand-name">STEM2Connect</span>
         </a>
 
@@ -28,275 +30,96 @@
 
         <ul class="nav-links" id="navLinks">
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#what-we-do">What We Do</a></li>
+          <li><details class="nav-group"><summary>About <span aria-hidden="true">⌄</span></summary><ul class="nav-submenu"><li><a href="/#about">About Us</a></li><li><a href="/#what-we-do">What We Do</a></li><li><a href="/#team">Our Team</a></li></ul></details></li>
           <li><a href="hackathon/">Hackathon</a></li>
-          <li><a href="resources/">Resources</a></li>
-          <li><a href="resources/#games">Games</a></li>
-          <li><a href="opportunities.html" class="nav-button">Opportunities</a></li>
+          <li><details class="nav-group"><summary>Resources <span aria-hidden="true">⌄</span></summary><ul class="nav-submenu"><li><a href="/resources/">All Resources</a></li><li><a href="/resources/#games">Games</a></li><li><a href="/opportunities.html" aria-current="page">Opportunities</a></li><li><a href="/resources/#newsletter-archive">Newsletter Archive</a></li><li><a href="/resources/#journal">Journal</a></li><li><a href="/resources/#coming-soon">Coming Soon</a></li></ul></details></li>
           <li><a href="index.html#events">Events</a></li>
-          <li><a href="index.html#team">Team</a></li>
           <li><a href="index.html#join">Join</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section class="page-hero discover-hero">
-        <div class="container discover-header">
-          <p class="eyebrow">Opportunity discovery</p>
-          <h1>Find the right STEM opportunity for every student.</h1>
-          <p class="hero-subtitle">
-            Match students to research, coding, leadership, and community programs based on their interests,
-            age, schedule, and support needs.
-          </p>
+    <main id="main-content">
+      <section class="opp-hero opp-container" aria-labelledby="hero-title">
+        <div class="opp-hero-copy">
+          <p class="opp-kicker"><span class="live-dot"></span> THE OPPORTUNITY FIELD GUIDE</p>
+          <h1 id="hero-title">Big curiosity.<br><span>Real possibilities.</span></h1>
+          <p class="opp-lede">Find the right STEM opportunity for every student. Explore remarkable programs, follow your interests, and find a place to grow.</p>
+          <div class="opp-hero-actions"><a class="opp-button primary" href="#explore">Explore opportunities <span aria-hidden="true">↗</span></a><button class="opp-text-button" type="button" data-start-finder>Find my fit <span aria-hidden="true">→</span></button></div>
+          <p class="opp-hero-note"><span aria-hidden="true">✓</span> Real programs. Official links. Room for your ambition.</p>
+        </div>
+        <div class="discovery-art" id="discovery-art">
+          <span class="art-coordinate coord-top" aria-hidden="true">EXPLORE / CONNECT / GROW</span>
+          <div class="art-orbit orbit-one" aria-hidden="true"></div><div class="art-orbit orbit-two" aria-hidden="true"></div>
+          <span class="art-node node-one" aria-hidden="true"></span><span class="art-node node-two" aria-hidden="true"></span><span class="art-node node-three" aria-hidden="true"></span>
+          <div class="art-label label-one"><span class="label-dot"></span> A world of discovery</div>
+          <button class="compass-object" id="spin-compass" type="button" aria-label="Spin the discovery compass">
+            <svg viewBox="0 0 360 360" aria-hidden="true" focusable="false">
+              <defs><linearGradient id="disc" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf8"/><stop offset="1" stop-color="#ebdfc6"/></linearGradient><linearGradient id="needle" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#db654a"/><stop offset="1" stop-color="#aa0000"/></linearGradient><radialGradient id="center"><stop stop-color="#fffaf2"/><stop offset="1" stop-color="#e1c99d"/></radialGradient></defs>
+              <circle cx="180" cy="186" r="146" fill="#d5c6a9"/><circle cx="180" cy="179" r="146" fill="url(#disc)" stroke="#cdbb97" stroke-width="1"/>
+              <circle cx="180" cy="179" r="130" fill="none" stroke="#b8a585" stroke-width="1"/><circle cx="180" cy="179" r="117" fill="none" stroke="#c4b18c" stroke-width="7" stroke-dasharray="1 12.6"/>
+              <circle cx="180" cy="179" r="99" fill="#fffaf2" stroke="#e3d8c2"/>
+              <path d="M180 62v17M180 279v17M63 179h17M280 179h17" stroke="#aa0000" stroke-width="2"/>
+              <g class="compass-needle"><path d="M180 85l25 94-25 94-25-94z" fill="#dfd1b8"/><path d="M180 85v94h25z" fill="#aa0000"/><path d="M180 85l-25 94h25z" fill="url(#needle)"/><path d="M180 273v-94h-25z" fill="#b1baa1"/><path d="M86 179l94-18 94 18-94 18z" fill="#ded5bf"/><path d="M86 179h94v-18z" fill="#f6ecd6"/></g>
+              <circle cx="180" cy="179" r="15" fill="url(#center)" stroke="#d2ba8d"/><circle cx="180" cy="179" r="5" fill="#aa0000"/>
+              <g fill="#776851" font-family="input-mono, monospace" font-size="10" text-anchor="middle"><text x="180" y="52">N</text><text x="180" y="314">S</text><text x="47" y="183">W</text><text x="313" y="183">E</text></g>
+            </svg>
+          </button>
+          <div class="art-label label-two"><span class="art-label-icon" aria-hidden="true">↗</span><span>Your next chapter<br><strong>starts with curiosity.</strong></span></div>
+          <span class="art-coordinate coord-bottom">CHOOSE YOUR OWN DIRECTION</span>
         </div>
       </section>
+      <div class="opp-guide-strip"><div class="opp-container"><p><strong id="program-total">17</strong> programs to explore</p><span aria-hidden="true">✳</span><p>Campus experiences & online learning</p><span aria-hidden="true">✳</span><p>Reviewed <time datetime="2026-09-16">16 Sep 2026</time></p></div></div>
 
-      <section class="section compact-section">
-        <div class="container opportunity-layout">
-          <aside class="finder-panel">
-            <form id="program-form" class="finder-form" aria-label="Program matching form">
-              <div class="field-group">
-                <label>Student interests</label>
-                <div class="chip-grid" data-interest-selector>
-                  <button type="button" class="chip" data-value="robotics">Robotics</button>
-                  <button type="button" class="chip" data-value="coding">Coding</button>
-                  <button type="button" class="chip" data-value="science">Science</button>
-                  <button type="button" class="chip" data-value="design">Design</button>
-                  <button type="button" class="chip" data-value="music">Music</button>
-                  <button type="button" class="chip" data-value="sports">Sports</button>
-                  <button type="button" class="chip" data-value="outdoors">Outdoors</button>
-                  <button type="button" class="chip" data-value="leadership">Leadership</button>
-                  <button type="button" class="chip" data-value="community">Community</button>
-                  <button type="button" class="chip" data-value="environment">Environment</button>
-                  <button type="button" class="chip" data-value="making">Making</button>
-                  <button type="button" class="chip" data-value="writing">Writing</button>
-                  <button type="button" class="chip" data-value="business">Business</button>
-                  <button type="button" class="chip" data-value="research">Research</button>
-                </div>
-              </div>
-
-              <div class="field-grid">
-                <div class="field-group">
-                  <label for="age-range">Age range</label>
-                  <select id="age-range" name="age-range">
-                    <option value="all">Any age</option>
-                    <option value="6-8">6 to 8</option>
-                    <option value="9-12">9 to 12</option>
-                    <option value="13-15">13 to 15</option>
-                    <option value="16-18">16 to 18</option>
-                  </select>
-                </div>
-
-                <div class="field-group">
-                  <label for="budget">Budget</label>
-                  <select id="budget" name="budget">
-                    <option value="all">Any budget</option>
-                    <option value="free">Free</option>
-                    <option value="low">Low cost</option>
-                    <option value="moderate">Moderate</option>
-                    <option value="scholarship">Scholarships available</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="field-grid">
-                <div class="field-group">
-                  <label for="timing">Program timing</label>
-                  <select id="timing" name="timing">
-                    <option value="all">Any timing</option>
-                    <option value="after-school">After-school</option>
-                    <option value="weekend">Weekend</option>
-                    <option value="summer">Summer</option>
-                    <option value="club">Community club</option>
-                  </select>
-                </div>
-
-                <div class="field-group">
-                  <label for="support">Support needs</label>
-                  <select id="support" name="support">
-                    <option value="all">Any support</option>
-                    <option value="mentoring">Mentoring</option>
-                    <option value="team">Team-based</option>
-                    <option value="beginner">Beginner-friendly</option>
-                    <option value="leader">Leadership development</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="field-group">
-                <label for="notes">What does the student enjoy most?</label>
-                <textarea id="notes" name="notes" rows="4" placeholder="Example: Loves design, wants a team setting, and prefers affordable local options."></textarea>
-              </div>
-
-              <div class="form-actions">
-                <button type="submit" class="button button-primary">Find matches</button>
-                <button type="reset" class="button button-secondary" id="clear-button">Clear</button>
-              </div>
-            </form>
+      <section class="opp-directory opp-container" id="explore" aria-labelledby="explore-heading">
+        <div class="opp-section-heading"><div><p class="opp-kicker">01 / FIND YOUR DIRECTION</p><h2 id="explore-heading">Something that <em>clicks.</em></h2><p>Research labs, summer adventures, and a little “what if?”</p></div><button class="finder-invite" type="button" data-start-finder><span class="finder-symbol" aria-hidden="true">✳</span><span><strong>Not sure where to start?</strong><small>10 quick questions. A shortlist that fits.</small></span><span aria-hidden="true">↗</span></button></div>
+        <div class="opp-search-row"><label class="opp-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">Search programs, universities, or places</span><input id="program-search" type="search" placeholder="A subject, a university, a possibility…" autocomplete="off" /></label><button class="saved-filter" id="saved-filter" type="button" aria-pressed="false"><span aria-hidden="true">♡</span> My shortlist <span id="saved-count">0</span></button></div>
+        <div class="opp-workspace">
+          <aside class="opp-sidebar" aria-label="Filter opportunities">
+            <details class="filter-disclosure" open><summary><span>Make it yours</span><span class="filter-mobile-label">Filters +</span></summary>
+              <form id="directory-filters">
+                <fieldset><legend>What sparks your curiosity?</legend><div id="topic-filters" class="topic-filters"></div></fieldset>
+                <label class="opp-field">Grade at program start<select id="filter-grade" name="grade"><option value="">Any grade</option><option value="1">Grade 1</option><option value="2">Grade 2</option><option value="3">Grade 3</option><option value="4">Grade 4</option><option value="5">Grade 5</option><option value="6">Grade 6</option><option value="7">Grade 7</option><option value="8">Grade 8</option><option value="9">Grade 9</option><option value="10">Grade 10</option><option value="11">Grade 11</option><option value="12">Grade 12</option><option value="13">Recent graduate</option></select></label>
+                <label class="opp-field">Your budget<select id="filter-budget" name="budget"><option value="">Any budget</option><option value="free">Tuition-free</option><option value="500">Published fee ≤ $500</option><option value="aid">Tuition-free or aid available</option></select><small>Travel and other fees may still apply.</small></label>
+                <label class="opp-field">How you'd like to join<select id="filter-mode" name="mode"><option value="">Campus or online</option><option value="campus">On campus</option><option value="online">Online</option></select></label>
+                <label class="opp-field">Where to explore<select id="filter-region" name="region"><option value="">Anywhere</option><option value="northeast">Northeast US</option><option value="midwest">Midwest US</option><option value="south">Southern US</option><option value="west">Western US</option><option value="online">Online only</option></select></label>
+                <label class="opp-field">Application status<select id="filter-status" name="status"><option value="">All statuses</option><option value="upcoming">Next cycle announced</option><option value="closed">Past cycle / watch for updates</option><option value="verify">Confirm with provider</option><option value="archived">Discontinued</option></select></label>
+                <button class="opp-text-button reset-filters" type="reset">Reset all filters <span aria-hidden="true">↺</span></button>
+              </form>
+            </details>
+            <div class="sidebar-note"><span aria-hidden="true">↗</span><p>Big plans can start small.</p><small>Save a few possibilities. Explore them at your own pace.</small></div>
           </aside>
-
-          <section class="results-panel" aria-live="polite">
-            <div class="results-header">
-              <div>
-                <p class="eyebrow">Recommended opportunities</p>
-                <h2>Best-fit programs</h2>
-              </div>
-            </div>
-
-            <div id="result-state" class="result-state">Select a few interests to see recommendations.</div>
-            <div id="results" class="results-list"></div>
-          </section>
-        </div>
-      </section>
-
-      <section class="section compact-section">
-        <div class="container map-layout">
-          <aside class="finder-panel compact-panel">
-            <form id="map-form" class="finder-form" aria-label="Map filter form">
-              <div class="field-group">
-                <label for="map-interest">Interest</label>
-                <select id="map-interest" name="map-interest">
-                  <option value="all">All interests</option>
-                  <option value="robotics">Robotics</option>
-                  <option value="coding">Coding</option>
-                  <option value="science">Science</option>
-                  <option value="design">Design</option>
-                  <option value="music">Music</option>
-                  <option value="sports">Sports</option>
-                  <option value="outdoors">Outdoors</option>
-                  <option value="community">Community</option>
-                  <option value="writing">Writing</option>
-                  <option value="business">Business</option>
-                  <option value="leadership">Leadership</option>
-                </select>
-              </div>
-
-              <div class="field-group">
-                <label for="map-age">Age range</label>
-                <select id="map-age" name="map-age">
-                  <option value="all">All ages</option>
-                  <option value="6-8">6 to 8</option>
-                  <option value="9-12">9 to 12</option>
-                  <option value="13-15">13 to 15</option>
-                  <option value="16-18">16 to 18</option>
-                </select>
-              </div>
-
-              <button type="submit" class="button button-primary full-width">Update map view</button>
-            </form>
-          </aside>
-
-          <section class="results-panel map-panel">
-            <div class="map-stage" aria-label="Community opportunity map">
-              <div class="map-grid"></div>
-              <button type="button" class="map-pin" data-id="1" style="left:25%; top:30%;">1</button>
-              <button type="button" class="map-pin" data-id="2" style="left:45%; top:58%;">2</button>
-              <button type="button" class="map-pin" data-id="3" style="left:63%; top:38%;">3</button>
-              <button type="button" class="map-pin" data-id="4" style="left:30%; top:75%;">4</button>
-              <button type="button" class="map-pin" data-id="5" style="left:52%; top:42%;">5</button>
-              <button type="button" class="map-pin" data-id="6" style="left:72%; top:68%;">6</button>
-              <button type="button" class="map-pin" data-id="7" style="left:48%; top:50%;">7</button>
-              <button type="button" class="map-pin" data-id="8" style="left:38%; top:60%;">8</button>
-              <button type="button" class="map-pin" data-id="9" style="left:58%; top:72%;">9</button>
-              <button type="button" class="map-pin" data-id="10" style="left:66%; top:26%;">10</button>
-            </div>
-            <div class="map-notice-wrap">
-              <p id="map-notice" class="map-notice">Showing nearby opportunities.</p>
-            </div>
-            <div id="map-results" class="map-results"></div>
-          </section>
-        </div>
-      </section>
-
-      <section class="section compact-section">
-        <div class="container">
-          <div class="form-shell">
-            <form id="opportunity-form" class="opportunity-form">
-              <div class="field-grid two-up">
-                <div class="field-group">
-                  <label for="program-name">Program name</label>
-                  <input id="program-name" type="text" placeholder="Example: After-school robotics club" required />
-                </div>
-                <div class="field-group">
-                  <label for="org-name">Organization or school</label>
-                  <input id="org-name" type="text" placeholder="Organization name" required />
-                </div>
-              </div>
-
-              <div class="field-grid two-up">
-                <div class="field-group">
-                  <label for="category">Category</label>
-                  <select id="category" required>
-                    <option value="">Select one</option>
-                    <option>STEM</option>
-                    <option>Arts</option>
-                    <option>Sports</option>
-                    <option>Music</option>
-                    <option>Leadership</option>
-                    <option>Outdoors</option>
-                    <option>Community</option>
-                  </select>
-                </div>
-                <div class="field-group">
-                  <label for="age-group">Age group</label>
-                  <select id="age-group" required>
-                    <option value="">Select one</option>
-                    <option>6 to 8</option>
-                    <option>9 to 12</option>
-                    <option>13 to 15</option>
-                    <option>16 to 18</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="field-grid two-up">
-                <div class="field-group">
-                  <label for="location-name">Location</label>
-                  <input id="location-name" type="text" placeholder="Neighborhood or city" required />
-                </div>
-                <div class="field-group">
-                  <label for="program-link">Registration link</label>
-                  <input id="program-link" type="url" placeholder="https://example.org" required />
-                </div>
-              </div>
-
-              <div class="field-group">
-                <label for="program-description">Description</label>
-                <textarea id="program-description" rows="5" placeholder="Describe the opportunity, who it serves, and how students can join." required></textarea>
-              </div>
-
-              <div class="field-grid two-up">
-                <div class="field-group">
-                  <label for="cost">Cost</label>
-                  <select id="cost">
-                    <option>Free</option>
-                    <option>Low cost</option>
-                    <option>Moderate cost</option>
-                    <option>Scholarship available</option>
-                  </select>
-                </div>
-                <div class="field-group">
-                  <label for="format">Format</label>
-                  <select id="format">
-                    <option>After-school</option>
-                    <option>Weekend</option>
-                    <option>Summer</option>
-                    <option>Community club</option>
-                  </select>
-                </div>
-              </div>
-
-              <button type="submit" class="button button-primary">Submit opportunity</button>
-              <p id="form-success" class="form-success" hidden>Thanks for submitting a new opportunity. We will review it for visibility on the platform.</p>
-            </form>
+          <div class="opp-results">
+            <div class="results-toolbar"><p id="results-count" role="status" aria-live="polite"></p><div class="view-controls" role="group" aria-label="Results view"><button type="button" id="list-view" aria-pressed="true"><span aria-hidden="true">▦</span> List</button><button type="button" id="map-view" aria-pressed="false"><span aria-hidden="true">◎</span> Map</button></div></div>
+            <div id="match-summary" class="match-summary" hidden><div><strong>Your field guide, personalized.</strong><p id="match-summary-text"></p></div><button type="button" class="opp-text-button" data-start-finder>Edit answers ↗</button></div>
+            <div id="map-panel" class="real-map-panel" hidden><div class="map-topline"><span>Explore the geography of possibility</span><button type="button" id="fit-map">Show all locations ↗</button></div><div id="opportunity-map" aria-label="Interactive program map" tabindex="0"></div><p id="map-status" role="status">Opening the map…</p><button id="retry-map" class="opp-text-button" type="button" hidden>Try loading the map again</button><p class="map-caption">Pins mark approximate host campuses. Online-only programs have no campus pin. Confirm the exact venue with the organizer.</p></div>
+            <div id="program-results" class="program-grid"></div>
+            <div id="empty-results" class="empty-results" hidden><span aria-hidden="true">⌕</span><h3>A different direction?</h3><p id="empty-message">Try a broader subject or fewer filters.</p><button class="opp-button" id="empty-reset" type="button">Show all opportunities</button></div>
+            <button id="show-more" class="opp-button show-more" type="button" hidden>Explore more programs <span aria-hidden="true">↓</span></button>
+            <div class="directory-footnote"><span aria-hidden="true">ⓘ</span><p>Plan ahead: many summer 2026 cycles have ended. Each listing distinguishes confirmed future dates, past dates, and details that still need checking. Matching reflects preferences, <strong>not admission odds or confirmed eligibility.</strong></p></div>
+            <p id="program-fallback">While the interactive guide loads, you can <a href="opportunities-directory.html">browse every program and its official link</a>. This directory also works without JavaScript.</p>
           </div>
         </div>
       </section>
-    </main>
 
+      <section class="opp-contribute opp-container" aria-labelledby="contribute-heading">
+        <div><p class="opp-kicker">02 / PASS THE POSSIBILITY ON</p><h2 id="contribute-heading">Know something<br>worth <em>sharing?</em></h2><p>A great opportunity deserves to be found. Help us keep this guide growing.</p><a class="opp-text-button" href="https://www.summitadmissionsconsulting.com/stem.html" target="_blank" rel="noopener noreferrer">Explore the Summit STEM directory <span aria-hidden="true">↗</span></a><small class="source-note">An additional discovery resource; check dates and fees with the official provider.</small></div>
+        <details class="suggestion-details"><summary><span>Suggest an opportunity</span><span aria-hidden="true">+</span></summary><p>Prepare an email for the STEM2Connect team. Nothing is submitted until you send it from your email app.</p><form id="opportunity-form">
+          <label class="opp-field">Program name<input id="program-name" required maxlength="140" autocomplete="off" /></label>
+          <label class="opp-field">Organization or school<input id="org-name" required maxlength="140" autocomplete="off" /></label>
+          <div class="suggestion-grid"><label class="opp-field">Category<select id="category"><option>STEM</option><option>Research</option><option>Competition</option><option>Scholarship</option><option>Community</option></select></label><label class="opp-field">Age or grade group<input id="age-group" required maxlength="80" placeholder="e.g. Rising grades 10–12" /></label></div>
+          <label class="opp-field">Location or online format<input id="location-name" required maxlength="140" /></label>
+          <label class="opp-field">Official program link<input id="program-link" type="url" required maxlength="500" placeholder="https://" /></label>
+          <label class="opp-field">Description<textarea id="program-description" required maxlength="1200" rows="3"></textarea></label>
+          <div class="suggestion-grid"><label class="opp-field">Cost<input id="cost" maxlength="120" placeholder="Fee or funding details" /></label><label class="opp-field">Timing<input id="format" maxlength="120" placeholder="Dates or application window" /></label></div>
+          <button class="opp-button primary" type="submit">Prepare email suggestion ↗</button>
+        </form><div id="suggestion-preview" hidden><p>Your draft is ready. Review it below, then send it using your email app.</p><pre id="suggestion-text"></pre><a id="send-suggestion" class="opp-button primary">Open email draft ↗</a><button type="button" class="opp-text-button" id="download-suggestion">Download draft</button></div></details>
+      </section>
+      <dialog class="opp-dialog program-dialog" id="program-dialog" aria-labelledby="detail-title"><button type="button" class="dialog-close" data-close-dialog aria-label="Close program details">×</button><div id="program-detail"></div></dialog>
+      <dialog class="opp-dialog finder-dialog" id="finder-dialog" aria-labelledby="question-title"><div class="finder-top"><span class="opp-kicker">YOUR PERSONAL FIELD GUIDE</span><button type="button" class="dialog-close" data-close-dialog aria-label="Close finder">×</button></div><div class="finder-progress"><span id="finder-progress-bar"></span></div><p id="question-number" class="opp-kicker"></p><h2 id="question-title" tabindex="-1"></h2><p id="question-hint"></p><div id="question-options" class="question-options"></div><div class="finder-bottom"><button class="opp-text-button" type="button" id="finder-back">← Back</button><button class="opp-text-button" type="button" id="finder-skip">Skip</button><button class="opp-button primary" type="button" id="finder-next">Next →</button></div><p class="finder-privacy">No name, email, or account needed. Your answers stay in this page.</p></dialog>
+      <p id="opp-announcement" class="sr-only" role="status" aria-live="polite"></p>
+    </main>
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
@@ -327,5 +150,4 @@
         <p>© <span id="year"></span> STEM2Connect. All rights reserved.</p>
       </div>
     </footer>
-  </body>
-</html>
+</body></html>

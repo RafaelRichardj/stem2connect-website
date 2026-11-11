@@ -14,11 +14,14 @@ import shutil
 ROOT = Path(__file__).resolve().parents[2]
 SHARED = (
     "assets",
+    "adobe-typography.css",
     "motion.css",
     "enhancements.css",
     "scene-client.js",
     "static-batches.js",
     "motion.js",
+    "hackathon-motion.js",
+    "hackathon-motion.css",
     "edge-decorations.js",
     "polish.css",
     "orbital.js",
